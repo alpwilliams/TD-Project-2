@@ -11,7 +11,7 @@ body {
 }
 
 p {
-
+	text-align: center;
 }
 
 h1 {
@@ -19,15 +19,19 @@ h1 {
 }
 
 h2 {
+	text-align: center;
+}
 
+h3 {
+	text-align: center;
 }
 
 a {
-
+	text-decoration: none;
 }
 
 img {
-	
+	max-width: 100%;
 }
 
 /* ================================= 
@@ -37,11 +41,71 @@ img {
 
 /* ---- Navigation ---- */
 
+nav {
+	/*display: inline-block;*/
+}
 
+.main-nav li {
+	text-align: center;
+	background: #FFF;
+	display: block;
+	padding: 10px;
+}
+
+.main-nav a {
+	font-size:;
+	color:black;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	display: block;
+}
+
+.main-nav a:hover {
+	color: aqua;
+}
+
+/*.main-nav li {
+
+}*/
 
 /* ---- Layout Containers ---- */
 
+.topbox {
+	background: lightgrey;
+}
 
+.name {
+	text-align: center;
+}
+
+.profile {
+	text-align: center;
+}
+
+.intro {
+	margin: auto;
+	text-align: center;
+}
+
+.blurb {
+	padding: 2px;
+	text-align: center;
+}
+
+.box {
+	border: 2px solid #8292b1;
+	padding: 10px 10px;
+	margin: auto;
+}
+
+.main-header {
+	text-align: center;
+	background: lightgrey;
+}
+
+.main-footer {
+
+}
 
 /* ---- Page Elements ---- */
 
@@ -51,6 +115,22 @@ img {
   Media Queries
 ==================================== */
 
+@media (min-width: 768px) {
+
+	.box {
+		width: 50%;
+		float: left;
+	}
+
+	.profile {
+		float: right;
+		width: 40%;
+	}
+
+	.blurb {
+		float: left;
+		width: 60%;
+	}
 
 	/* ---- Float clearfix ---- */
 
@@ -61,3 +141,15 @@ img {
 	}
 
 
+}
+
+@media (min-width: 1024px) {
+
+
+
+
+
+
+
+
+}

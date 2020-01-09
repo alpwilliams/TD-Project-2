@@ -61,13 +61,14 @@ nav {
 	background: #FFF;
 	display: block;
 	/*padding: 10px;*/
-	margin: 5px 5px;
+	margin: 5px 10px;
 }
 
 .main-nav a {
 	font-size:;
 	color:black;
 	text-transform: uppercase;
+	font-weight: bold;
 	padding: 10px 15px;
 	display: block;
 }
@@ -83,14 +84,15 @@ nav {
 /* ---- Layout Containers ---- */
 
 .topbox {
-	background: lightgrey;
-	margin: 0;
+	background: ghostwhite;
+	margin: auto;
 }
 
 .name {
 	text-align: center;
 	padding: 1px;
 	margin: 0 5px;
+	text-decoration: center;
 }
 
 .profile {
@@ -100,7 +102,7 @@ nav {
 .intro {
 	margin: 0;
 	text-align: center;
-	background: lightgrey;
+	background: ghostwhite;
 }
 
 .blurb {
@@ -109,7 +111,7 @@ nav {
 }
 
 .box {
-	border: 2px solid #8292b1;
+	/*border: 2px solid #8292b1;*/
 	padding: 10px 10px;
 	margin: auto;
 	background: #FFF;
@@ -117,28 +119,38 @@ nav {
 
 .main-header {
 	text-align: center;
-	background: lightgrey;
+	background: ghostwhite;
 }
 
 .main-footer {
-	margin-top: 1px solid darkgrey;
-	background: lightgrey;
+	border-top: 0.5px solid darkgrey;
+	background: ghostwhite;
 	margin: auto;
+	padding: 20px;
 }
 
 .footname {
 	float: left;
+	margin-left: 5px;
 }
 
 .return {
 	float: right;
 	text-transform: uppercase;
+	margin-right: 5px;
 }
 
 .contactbox {
 	text-align: center;
-	background: lightgrey;
+	background: ghostwhite;
 	padding: 5px;
+	padding-bottom: 30px;
+}
+
+.bottom-nav {
+	text-transform: uppercase;
+	display: none;
+	font-weight: bold;
 }
 
 .clearfix::after {
@@ -168,14 +180,22 @@ nav {
   	}
 
   	.contactbox {
-  		width: 90%;
+  		/*width: 90%;*/
   		margin: 0 auto;
   		clear: both;
+  		padding: 0 10px;
+  	}
+
+  	.topbox {
+  		width: 90%;
+  		margin: auto;
+  		float: center;
   	}
 
 	.box {
 		width: 50%;
 		height: auto;
+		/*max-height: 372px*/
 		float: left;
 	}
 
@@ -187,6 +207,43 @@ nav {
 	.blurb {
 		float: left;
 		width: 60%;
+	}
+
+	.main-nav li {
+		text-align: center;
+		background: transparent;
+		display: inline-block;
+		/*padding: 10px;*/
+		margin: 5px 10px;
+	}
+
+	.main-nav a {
+		font-size: 1.3em;
+		color:black;
+		text-transform: uppercase;
+		padding: 10px 15px;
+		/*display: inline-block;*/
+	}
+
+	.main-header {
+		/*text-orientation: : center;*/
+	}
+
+	.main-header,
+	.main-footer {
+		/*width: 90%;*/
+		text-orientation: center;
+	}
+
+	.return {
+		display: none;
+	}
+
+	.bottom-nav,
+	.bottom-nav li {
+		display: inline-block;
+		float: right;
+		margin: 0 10px;
 	}
 
 	/* ---- Float clearfix ---- */

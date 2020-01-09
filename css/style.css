@@ -141,6 +141,12 @@ nav {
 	padding: 5px;
 }
 
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
 /* ---- Page Elements ---- */
 
 
@@ -151,8 +157,25 @@ nav {
 
 @media (min-width: 768px) {
 
+	.wrap {
+    min-height: calc(100vh - 25.6px); /* 100 view height minus footer height of 25.6px */
+	}
+
+  	.container { 
+
+		width: 90%; /* giving the container width prevents it from stretching too wide on larger screens */
+		margin: 0 auto; /* setting left and right margin to auto will center the container */
+  	}
+
+  	.contactbox {
+  		width: 90%;
+  		margin: 0 auto;
+  		clear: both;
+  	}
+
 	.box {
 		width: 50%;
+		height: auto;
 		float: left;
 	}
 
@@ -178,6 +201,12 @@ nav {
 }
 
 @media (min-width: 1024px) {
+
+	.box {
+		width: 33.333%;
+		height: auto;
+		float: left;
+	}
 
 
 

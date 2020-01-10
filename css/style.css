@@ -7,9 +7,10 @@
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	line-height: 1.6;
-	color: #3a3a3a;
+	color: #5a716a;
+	background: #dce8f0;
 }
 
 p {
@@ -17,7 +18,8 @@ p {
 }
 
 h1 {
-
+	font-family: 'Asap', sans-serif;
+	color: #5a716a;
 }
 
 h2 {
@@ -30,11 +32,12 @@ h3 {
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #5a716a;
 }
 
 a:hover {
-	color: aqua;
+	color: #ad7a99;
+	
 }
 
 img {
@@ -56,6 +59,18 @@ nav {
 	margin: 0;
 }*/
 
+.main-nav li,
+.bottom-nav li {
+	font-family: 'Asap', sans-serif;
+	color: #5a716a;
+}
+
+.main-nav a,
+.bottom-nav a {
+	font-family: 'Asap', sans-serif;
+	color: #5a716a;
+}
+
 .main-nav li {
 	text-align: center;
 	background: #FFF;
@@ -65,16 +80,22 @@ nav {
 }
 
 .main-nav a {
-	font-size:;
-	color:black;
+	/*font-size:;*/
+	color:#5a716a;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 10px 15px;
 	display: block;
+	background: #dce8f0;
 }
 
 .main-nav a:hover {
-	color: aqua;
+	background-color: #8cdfd6;
+}
+
+.main-nav a:hover,
+.bottom-nav a:hover {
+	color: #6dc0d5;
 }
 
 /*.main-nav li {
@@ -84,7 +105,7 @@ nav {
 /* ---- Layout Containers ---- */
 
 .topbox {
-	background: ghostwhite;
+	background: #b2cede;
 	margin: auto;
 }
 
@@ -102,7 +123,7 @@ nav {
 .intro {
 	margin: 0;
 	text-align: center;
-	background: ghostwhite;
+	background: #b2cede;
 }
 
 .blurb {
@@ -114,19 +135,24 @@ nav {
 	/*border: 2px solid #8292b1;*/
 	padding: 10px 10px;
 	margin: auto;
-	background: #FFF;
+	background: #dce8f0;
 }
 
 .main-header {
 	text-align: center;
-	background: ghostwhite;
+	background: #b2cede;
 }
 
 .main-footer {
-	border-top: 0.5px solid darkgrey;
-	background: ghostwhite;
+	border-top: 0.5px solid #ad7a99;
+	background: #b2cede;
 	margin: auto;
 	padding: 20px;
+}
+
+.footname,
+.return {
+	font-family: 'Asap', sans-serif;
 }
 
 .footname {
@@ -142,7 +168,7 @@ nav {
 
 .contactbox {
 	text-align: center;
-	background: ghostwhite;
+	background: #b2cede;
 	padding: 5px;
 	padding-bottom: 30px;
 }
@@ -179,6 +205,10 @@ nav {
 		margin: 0 auto; /* setting left and right margin to auto will center the container */
   	}
 
+  	.main-nav a:hover {
+		background-color: transparent;
+	}
+
   	.contactbox {
   		/*width: 90%;*/
   		margin: 0 auto;
@@ -207,6 +237,7 @@ nav {
 	.blurb {
 		float: left;
 		width: 60%;
+		padding-right: 25px;
 	}
 
 	.main-nav li {
@@ -219,9 +250,9 @@ nav {
 
 	.main-nav a {
 		font-size: 1.3em;
-		color:black;
 		text-transform: uppercase;
 		padding: 10px 15px;
+		background: transparent;
 		/*display: inline-block;*/
 	}
 
@@ -258,6 +289,13 @@ nav {
 }
 
 @media (min-width: 1024px) {
+
+	.main-header,
+	.wrap,
+	.contactbox,
+	.main-footer, {
+		max-width: 1150px;
+	}
 
 	.box {
 		width: 33.333%;

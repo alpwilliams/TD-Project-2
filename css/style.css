@@ -170,7 +170,7 @@ nav {
 @media (min-width: 768px) {
 
 	.wrap {
-    min-height: calc(100vh - 25.6px); /* 100 view height minus footer height of 25.6px */
+    	min-height: calc(100vh - 25.6px); /* 100 view height minus footer height of 25.6px */
 	}
 
   	.container { 
@@ -264,6 +264,22 @@ nav {
 		height: auto;
 		float: left;
 	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.profile {
+		clear: both;
+	}
+
+/*	.blurb {
+		float: none;
+	}*/
 
 
 

@@ -55,23 +55,23 @@ nav {
 	/*display: inline-block;*/
 }
 
-/*.main-nav {
+/*.nav {
 	margin: 0;
 }*/
 
-.main-nav li,
+nav li,
 .bottom-nav li {
 	font-family: 'Asap', sans-serif;
 	color: #5a716a;
 }
 
-.main-nav a,
+nav a,
 .bottom-nav a {
 	font-family: 'Asap', sans-serif;
 	color: #5a716a;
 }
 
-.main-nav li {
+nav li {
 	text-align: center;
 	background: #FFF;
 	display: block;
@@ -79,7 +79,7 @@ nav {
 	margin: 5px 10px;
 }
 
-.main-nav a {
+nav a {
 	/*font-size:;*/
 	color:#5a716a;
 	text-transform: uppercase;
@@ -89,16 +89,16 @@ nav {
 	background: #dce8f0;
 }
 
-.main-nav a:hover {
+nav a:hover {
 	background-color: #8cdfd6;
 }
 
-.main-nav a:hover,
+nav a:hover,
 .bottom-nav a:hover {
 	color: #6dc0d5;
 }
 
-/*.main-nav li {
+/*.nav li {
 
 }*/
 
@@ -131,7 +131,8 @@ nav {
 	text-align: center;
 }
 
-.box {
+.box,
+.skillsbox {
 	/*border: 2px solid #8292b1;*/
 	padding: 10px 10px;
 	margin: auto;
@@ -144,7 +145,6 @@ nav {
 }
 
 .main-footer {
-	border-top: 0.5px solid #ad7a99;
 	background: #b2cede;
 	margin: auto;
 	padding: 20px;
@@ -171,12 +171,18 @@ nav {
 	background: #b2cede;
 	padding: 5px;
 	padding-bottom: 30px;
+	border-bottom: 0.5px solid #ad7a99;
 }
 
 .bottom-nav {
 	text-transform: uppercase;
 	display: none;
 	font-weight: bold;
+}
+
+.skillsbox {
+	border-bottom: 0.5px solid #ad7a99;
+	clear: both;
 }
 
 .clearfix::after {
@@ -205,7 +211,7 @@ nav {
 		margin: 0 auto; /* setting left and right margin to auto will center the container */
   	}
 
-  	.main-nav a:hover {
+  	nav a:hover {
 		background-color: transparent;
 	}
 
@@ -237,10 +243,11 @@ nav {
 	.blurb {
 		float: left;
 		width: 60%;
+		padding-top:25px;
 		padding-right: 25px;
 	}
 
-	.main-nav li {
+	nav li {
 		text-align: center;
 		background: transparent;
 		display: inline-block;
@@ -248,7 +255,7 @@ nav {
 		margin: 5px 10px;
 	}
 
-	.main-nav a {
+	nav a {
 		font-size: 1.3em;
 		text-transform: uppercase;
 		padding: 10px 15px;
@@ -303,7 +310,7 @@ nav {
 		float: left;
 	}
 
-	.main-nav {
+	nav {
 		float: right;
 	}
 
@@ -315,9 +322,9 @@ nav {
 		clear: both;
 	}
 
-/*	.blurb {
-		float: none;
-	}*/
+	.blurb {
+		padding-top: 50px;
+	}
 
 
 

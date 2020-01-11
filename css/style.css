@@ -113,7 +113,6 @@ nav a:hover,
 	text-align: center;
 	padding: 1px;
 	margin: 0 5px;
-	text-decoration: center;
 }
 
 .profile {
@@ -225,7 +224,6 @@ nav a:hover,
   	.topbox {
   		width: 90%;
   		margin: auto;
-  		float: center;
   	}
 
 	.box {
@@ -267,12 +265,6 @@ nav a:hover,
 		/*text-orientation: : center;*/
 	}
 
-	.main-header,
-	.main-footer {
-		/*width: 90%;*/
-		text-orientation: center;
-	}
-
 	.return {
 		display: none;
 	}
@@ -300,8 +292,9 @@ nav a:hover,
 	.main-header,
 	.wrap,
 	.contactbox,
-	.main-footer, {
+	.main-footer {
 		max-width: 1150px;
+		margin: auto;
 	}
 
 	.box {
